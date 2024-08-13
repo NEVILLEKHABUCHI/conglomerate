@@ -1,38 +1,184 @@
-.App {
-  text-align: center;
+.appContainer{
+    width: 99vw;
+    height: 99vh;
+    /* background-color: #ACC8E5;
+    color: #112A46; */
+}
+header {
+    width: inherit;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: #0B112B;
+}
+header .logo {
+    width: 20vw;
+    height: inherit;
+}
+header .logo img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+}
+header .headerButtons {
+    width: 70vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2vw;
+}
+header .headerButtons button {
+    border: none;
+    background-color: #0B112B;
+    color: white;
+}
+header .headerButtons button.active {
+    color: #2585F8;
+}
+header .phoneButton {
+    display: none;
+}
+.homeBody {
+    width: inherit;
+    height: 84vh;
+    /* overflow-y: scroll; */
+    overflow-x: hidden;
+}
+.homeBody .bodyTop {
+    width: inherit;
+    height: 70vh;
+    border-bottom-left-radius: 150px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #1F305E;
+}
+.homeBody .bodyTop div {
+    width: 49.5vw;
+    height: inherit;
+}
+.homeBody .bodyTop .left {
+    border-bottom-left-radius: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.homeBody .bodyTop .left div {
+    width: 30vw;
+    height: max-content;
+    /* padding: 2vw; */
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.homeBody .bodyTop .left div p{
+    padding: 2vw;
+}
+.homeBody .bodyTop .left div .button {
+    display: flex;
+    justify-content: end;
+}
+.homeBody .bodyTop .left div .button button {
+    border: none;
+    background-color: #0B112B;
+    border-radius: 2px;
+    padding: 3px;
+    color: white;
+    font-size: 1rem;
+}
+/* Styling the imageSlider images */
+.slidingImages {
+    width: 49vw;
+    height: 70vh;
+    display: flex;
+    overflow: hidden;
+}
+.slidingImages img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+}
+.homeBody .bodyBottom{
+    width: inherit;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4vh;
+}
+.homeBody .bodyBottom i {
+    font-size: 1.5rem;
+    color: #2585F8;
+}
+.homeBody .bodyBottom p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #0B112B;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Media query */
+@media only screen and (max-width: 900px){
+    header {
+        display: flex;
+        overflow: unset;
+    }
+    header .logo {
+        margin-left: 2vw;
+        width: 50vw;
+        height: inherit;
+    }
+    header .headerButtons {
+        width: 99vw;
+        height: 20vh;
+        padding: 0.5vh 0;
+        position: absolute;
+        top: -100vh;
+        display: none;
+        transition: top 20s ease-in-out;
+    }
+    header .headerButtons.show{
+        top: 15.1vh;
+        display: flex;
+        flex-direction: column;
+        background-color: #0B112B;
+        
+    }
+    header .phoneButton {
+        display: flex;
+        align-items: center;
+        margin-right: 2vw;
+    }
+    header .phoneButton button {
+        border: none;
+        background-color: #0B112B;
+        color: white;
+    }
+    header .phoneButton button i {
+        font-size: 1.2rem;
+    }
+    .homeBody {
+        overflow-y: scroll;
+        padding-bottom: 10vh;
+    }
+    .homeBody .bodyTop{
+        width: 99vw;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2vh;
+        border-bottom-left-radius: 20px;
+        padding-bottom: 2vh;
+    }
+    .homeBody .bodyTop div {
+        width: 90vw;
+    }
+    .homeBody .bodyTop .left {
+        border-bottom-left-radius: 20px;
+    }
+    .homeBody .bodyTop .left div {
+        width: 80vw;
+    }
+    .slidingImages img {
+        width: inherit;
+        height: 50vh;
+        border-radius: 20px;
+    }
 }
