@@ -13,11 +13,11 @@ const Home=()=>{
             <div className="bodyTop">
                 <div className="left">
                     <div>
-                       <h2>Welcome to Conglomerate Engineering</h2><br/>
+                       <h2>Welcome to The Western Conglomerate State; the home of Engineers</h2><br/>
                        <p>
-                        Where innovation meets expertise. We connect you with the best engineers to bring your projects to life, 
+                        Where innovation meets expertise. We link you with the best professionals to bring your projects to life, 
                         no matter the scale or complexity. <br/><br/>
-                        Explore our services and discover how we can engineer your success together.
+                        Explore our services and discover how we can be a team player in helping you achieve and realize your objectives.
                        </p><br/>
                       <div className="button">
                         <button>Explore Services</button>
