@@ -119,7 +119,7 @@ header .phoneButton {
     height: 84vh;
     overflow-y: scroll;
     overflow-x: hidden;
-    padding-bottom: 4vh;
+    padding-bottom: 10vh;
 }
 .aboutBody .aboutTop {
     width: inherit;
