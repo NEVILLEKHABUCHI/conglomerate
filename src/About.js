@@ -53,7 +53,7 @@ const About=()=>{
                         <p id="left-line"></p>
                         <div className="content">
                             <h4>Client-Centric:</h4>
-                            <p>Your needs are ta the forefront of everything we do, ensuring tailored solutions that meet your specific requirements.</p>
+                            <p>Your needs are at the forefront of everything we do, ensuring tailored solutions that meet your specific requirements.</p>
                         </div>
                     </div>
                     <div className="value">
@@ -79,6 +79,16 @@ const About=()=>{
                         </div>
                     </div>
                 </div>
+
+                <h3>Why Choose Us</h3>
+                <p>Choosing The Western Conglomerate State means partnering with a team that understands the complexities of engineering projects. 
+                    We are dedicated to matching you with professionals who not only meet but exceed your expectations, delivering results that stand the test of time.
+                </p>
+                <br/>
+                <h3>Join Us in Building the Future</h3>
+                <p>We invite you to explore our services and see how we can contribute to the success of your next project. 
+                    Together, we can engineer a better tomorrow.
+                </p>
             </div>
             <div className="wing"></div>
         </div>

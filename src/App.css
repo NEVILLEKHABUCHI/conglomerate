@@ -32,6 +32,31 @@ header .headerButtons button {
     background-color: #0B112B;
     color: white;
 }
+header .headerButtons .serviceContent .serviceButtons {
+    display: flex;
+    gap: 1vw;
+}
+header .headerButtons .serviceContent .serviceLinks {
+    width: max-content;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    background-color: #0B112B;
+    gap: 0.5vh;
+    position: absolute;
+    top: 15vh;
+    left: 49vw;
+    transition: top 5s ease-in-out;
+    padding: 1vh 0.5vw;
+}
+header .headerButtons .serviceContent .serviceLinks a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    font-size: 0.8rem;
+    /* color: #2585F8; */
+}
 header .headerButtons button.active {
     color: #2585F8;
 }
@@ -187,6 +212,14 @@ header .phoneButton {
     font-size: 0.9rem;
 }
 
+/* Styling the service page */
+.servicesBody {
+    width: 99vw;
+    height: 84vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-bottom: 10vh;
+}
 
 /* Media query */
 @media only screen and (max-width: 900px){
@@ -201,12 +234,12 @@ header .phoneButton {
     }
     header .headerButtons {
         width: 99vw;
-        height: 20vh;
+        height: max-content;
         padding: 0.5vh 0;
         position: absolute;
         top: -100vh;
         display: none;
-        transition: top 20s ease-in-out;
+        transition: top 0.3s ease-in-out;
     }
     header .headerButtons.show{
         top: 15.1vh;
@@ -227,6 +260,25 @@ header .phoneButton {
     }
     header .phoneButton button i {
         font-size: 1.2rem;
+    }
+    header .headerButtons .serviceContent {
+        /* position: relative; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header .headerButtons .serviceContent .serviceLinks {
+        width: max-content;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #0B112B;
+        gap: 0.5vh;
+        position: relative;
+        top: 0;
+        left: 0;
+        transition: all 0.3s ease;
     }
     .homeBody {
         overflow-y: scroll;
